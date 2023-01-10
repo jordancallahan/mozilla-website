@@ -9,7 +9,7 @@ myImage.onclick = () => {
   }
 };
 
-let myButton = document.querySelector("button");
+let myButton = document.querySelector("#user-button");
 let myHeading = document.querySelector("h1");
 
 function setUserName() {
@@ -32,3 +32,12 @@ if (!localStorage.getItem("name")) {
 myButton.onclick = () => {
   setUserName();
 };
+
+function showHide() {
+  var img = document.getElementById("image");
+  if (img.style.display === "none") {
+    img.style.display = "block";
+  } else {
+    img.style.display = "none";
+  }
+}
